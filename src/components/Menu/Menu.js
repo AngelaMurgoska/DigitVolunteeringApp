@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import vimage from '../../assets/images/icon.PNG'
+import vimage from '../../assets/images/icon3.png'
 import './Menu.css'
 import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
@@ -14,7 +14,7 @@ class Menu extends Component {
                     <a className="navbar-brand" href="#">
                         <div>
                             <img src={vimage}/>
-                            <span className={"menu-text"}>{this.state.title}</span>
+                            <div className={"menu-text-brand menu-text"}>{this.state.title}</div>
                         </div>
                     </a>
                     <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
@@ -25,10 +25,13 @@ class Menu extends Component {
                     <div className="collapse navbar-collapse" id="navbarResponsive">
                         <ul className="navbar-nav ml-auto">
                             <li className="nav-item">
-                                <a className="nav-link menu-text li-menu-padding" href="#">Sign up</a>
+                                <a className="nav-link menu-text li-menu-padding" href="#">Искуства од волонтери</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link menu-text li-menu-padding" href="#">Log in</a>
+                                <a className="nav-link menu-text li-menu-padding" href="#">Најава</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link menu-text li-menu-padding" href="#">Регистрација</a>
                             </li>
                         </ul>
                     </div>

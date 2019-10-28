@@ -1,16 +1,23 @@
 import React from "react";
 import { Carousel } from "react-responsive-carousel";
+import volunteeringImg1 from '../../assets/images/involved_volunteering.jpg'
+import volunteeringImg2 from '../../assets/images/Tips-for-Volunteering-With-Kids.jpg'
+import volunteeringImg3 from '../../assets/images/Volunteering is Good for You and Your Kids.jpg'
+import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
 
 export default () => (
-    <Carousel autoPlay>
-        <div>
-            <img src="https://cms-tc.pbskids.org/parents/articles/_shellTopicsFeature/Tips-for-Volunteering-With-Kids.jpg?mtime=20181203085840" />
-        </div>
-        <div>
-            <img src="https://spunout-images.s3.amazonaws.com/articles/_articleHeader/involved_volunteering.jpg?mtime=20181018021053" />
-        </div>
-        <div>
-            <img src="https://intermountainhealthcare.org/-/media/images/modules/blog/posts/2019/03/volunteering-is-good-for-you-and-your-kids.jpg?la=en&h=504&w=896&mw=896&hash=12B60E2046185023A7BB36AF203332C86DB664AE" />
-        </div>
-    </Carousel>
+    <div>
+        <Carousel autoPlay={true} showIndicators={false} showArrows={false} width={"100%"} showThumbs={false}>
+            <div>
+                <img src={volunteeringImg2} />
+            </div>
+            <div>
+                <img src={volunteeringImg1}/>
+            </div>
+            <div>
+                <img src={volunteeringImg3} />
+            </div>
+        </Carousel>
+    </div>
 );

@@ -9,7 +9,7 @@ class Menu extends Component {
     }
     render(){
         return (
-            <nav className="navbar fixed-top navbar-expand-lg fixed-top menu-bg">
+            <nav className="navbar fixed-top navbar-expand-lg menu-bg">
                 <div className="container">
                     <a className="navbar-brand" href="#">
                         <div>

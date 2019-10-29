@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import './Header.css'
-import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import Menu from "./Menu/Menu";
-import CarouselComponent from "./CarouselComponent/CarouselComponent"
+import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import Menu from "../Menu/Menu";
+import CarouselComponent from "../CarouselComponent/CarouselComponent"
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 

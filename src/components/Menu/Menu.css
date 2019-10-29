@@ -6,7 +6,8 @@
 .menu-text-brand{
     display: inline-block;
     vertical-align: bottom;
-    padding-bottom: 11px;
+    padding-bottom: 3%;
+    font-size: 1.6em;
 }
 
 .menu-bg{

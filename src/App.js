@@ -8,7 +8,7 @@ import Footer from "./components/Footer";
 import Menu from "./components/Menu/Menu";
 import VolnterStory from "./components/VolnterStory";
 import Sections from "./components/Sections/Sections";
-import Stylee from './components/Kategorii/CategoriesStyle.css'
+import Stylee from './components/Kategorii/CategoriesStyle.css';
 class App extends Component {
 
   state={
@@ -233,9 +233,8 @@ class App extends Component {
   render(){
     return (
         <div className="App">
-            <Header/>
-             <Content categories={this.state.categories}/>
-
+            <Menu/>
+             <Sections categories={this.state.categories}/>
              <Footer/>
         </div>
     );

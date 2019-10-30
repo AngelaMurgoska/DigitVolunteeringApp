@@ -13,8 +13,10 @@ padding: 0px;
 }
 
 .slika {
-padding: 0px!important;
+padding-left: 0px!important;
+display: float-left;
 }
 .naslov{
 padding: 0px!important;
+display: float-left;
 }

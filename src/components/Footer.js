@@ -1,12 +1,21 @@
 import React, {Component} from 'react';
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './Footer.css'
+import FooterLinks from "./FooterLinks/FooterLinks";
+import FooterSocials from "./FooterSocials/FooterSocials";
 
 class Footer extends Component {
     render(){
         return (
-            <div className={"container-fluid footer-bg py-3 mt-4"}>
-                <h1>This is footer</h1>
+            <div className={"container-fluid footer-bg pt-3 pb-4 mt-4"}>
+                <div className={"row"}>
+                    <div className={"col-7"}>
+                        <FooterLinks/>
+                    </div>
+                    <div className={"col"}>
+                        <FooterSocials/>
+                    </div>
+                </div>
             </div>
         );
     }

@@ -27,13 +27,20 @@ class FooterLinks extends Component {
                  </ul>
              </div>
              <div className={"links-display"}>
-                 <ul className={"ul-links"}>
-                     <li className={"h5"}>Инфо</li>
-                     <li className={"li-item"}>За нас</li>
-                     <li className={"li-item"}>Информации</li>
-                     <li className={"li-item"}>Контакт</li>
-                 </ul>
-                 <button className={"btn-footer-link ml-4 btn btn-block active-pink-btn btn-text"}>Донирај во хуманитарни цели</button>
+                 <div className={"row mb-4"}>
+                     <div className={"col"}>
+                         <ul className={"ul-links"}>
+                             <li className={"h5"}>Инфо</li>
+                             <li className={"li-item"}>За нас</li>
+                             <li className={"li-item"}>Информации</li>
+                             <li className={"li-item"}>Контакт</li>
+                         </ul>
+                     </div>
+                 </div>
+                 <div className={"row"}>
+                     <div className={"col"}>
+                     </div>
+                 </div>
              </div>
             </div>
         );

@@ -9,6 +9,9 @@ import Menu from "./components/Menu/Menu";
 import VolnterStory from "./components/VolnterStory";
 import Sections from "./components/Sections/Sections";
 import Stylee from './components/Kategorii/CategoriesStyle.css'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons'
 class App extends Component {
 
   state={

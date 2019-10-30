@@ -12,7 +12,7 @@ class SitePost extends Component {
                 </div>
                 <div className={"col-2"}></div>
                 <div className={"col "}>
-                    <h4 className={"pb-3"}>Донирај во хуманитарни цели</h4>
+                    <h4 className={"pb-3 btn-text"}>Донирај во хуманитарни цели</h4>
                     <div className={"pb-2"}>
                         Сумата која се донирала во 2017 година во хуманитарни цели изнесува околу 400 милијарди долари.
                     </div>
@@ -20,7 +20,7 @@ class SitePost extends Component {
                         Приклучи се и ти, донирај во целите кои се поддржани од волонтирај.мк и направи свој придонес.
                     </div>
                     <div className={"pb-2"}>
-                        <button className={"btn-site-post mt-4 py-4 btn active-pink-btn btn-text"}>Донирај во хуманитарни цели</button>
+                        <button className={"btn-site-post mt-4 py-4 btn active-pink-btn btn-text"}>Донирај</button>
                     </div>
                 </div>
             </div>

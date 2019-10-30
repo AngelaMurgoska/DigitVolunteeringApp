@@ -1,18 +1,16 @@
 import React, {Component} from 'react';
-
 import '../../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import './FilteringSections.css'
 
 class FilteringSections extends Component {
     render(){
         return (
-            <div className={"container-fluid"}>
-               <h1>This is filtering sections</h1>
-               <div className={"row"}>
-               <p>Ovde kategoriite so sliki </p>
+            <div className={"container pt-3 "}>
+             <h5 className={"font-weight-bold pt-2"}>Волонтерски категории</h5>
+               <div className={"row pt-3"}>
+                    {this.props.children}
                </div>
-               <div className={"row"}>
 
-               </div>
              </div>
     );
     }

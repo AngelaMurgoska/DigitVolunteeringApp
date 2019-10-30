@@ -1,0 +1,22 @@
+.card-element{
+ border-color: #f48fb1 !important;
+ color: #f48fb1 !important;
+}
+
+.card-text card-title card-body card-header card{
+ border-color: #f48fb1 !important;
+ color: #f48fb1 !important;
+}
+h2{
+padding: 10px;
+}
+h1{
+padding: 10px;
+text-align: centre;
+}
+
+.image{
+ width:100% !important;
+  height:100% !important;
+  background-image:url('https://www.ageuk.org.uk/bp-assets/globalassets/lindsey/images/volunteering/hands_med.jpg');
+  }

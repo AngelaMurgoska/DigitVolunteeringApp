@@ -12,73 +12,49 @@ import volunteeringImg3 from '../../../assets/images/Volunteering is Good for Yo
 class NewsSections extends Component {
     render(){
         return (
-      <div className={"container"}>
+      <div className="content">
 
-        <HeaderSections/>
+      <HeaderSections categories={this.props.categories}/>
+
       <div className="card-elem">
-      <CardDeck>
+         <CardDeck>
          <Card>
             <Card.Body>
-                <Card.Title>Card title</Card.Title>
-                    <Card.Text>
-                        This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.
-                    </Card.Text>
+               <Card.Title className={"font-weight-bold"}>{this.props.categories[0].nastani[0].naslov}</Card.Title>
+               <hr/>
+               <Card.Text>{this.props.categories[0].nastani[0].sodrzina}</Card.Text>
             </Card.Body>
             <Card.Footer>
-                <Button variant="primary">Види повеќе...</Button>
+               <Button variant="primary">Пријави се</Button>
             </Card.Footer>
          </Card>
-
-        <Card>
+         <Card>
             <Card.Body>
-            <Card.Title>Card title</Card.Title>
-                <Card.Text>
-                    This card has supporting text below as a natural lead-in to additional
-                    content.{' '}
-                </Card.Text>
+               <Card.Title className={"font-weight-bold"}>{this.props.categories[0].nastani[1].naslov}</Card.Title>
+               <hr/>
+               <Card.Text>{this.props.categories[0].nastani[1].sodrzina}</Card.Text>
             </Card.Body>
-        <Card.Footer>
-            <Button variant="primary">Види повеќе...</Button>
-        </Card.Footer>
-        </Card>
+            <Card.Footer>
+               <Button variant="primary">Пријави се</Button>
+            </Card.Footer>
+         </Card>
+         <Card>
+            <Card.Body>
+               <Card.Title className={"font-weight-bold"}>{this.props.categories[0].nastani[2].naslov}</Card.Title>
+               <hr/>
+               <Card.Text>{this.props.categories[0].nastani[2].sodrzina}</Card.Text>
+            </Card.Body>
+            <Card.Footer>
+               <Button variant="primary">Пријави се</Button>
+            </Card.Footer>
+         </Card>
+         </CardDeck>
 
-        </CardDeck>
-        <br/>
-        <CardDeck>
-                 <Card>
-                    <Card.Body>
-                        <Card.Title>Card title</Card.Title>
-                            <Card.Text>
-                                This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.
-                            </Card.Text>
-                    </Card.Body>
-                    <Card.Footer>
-                        <Button variant="primary">Види повеќе...</Button>
-                    </Card.Footer>
-                 </Card>
+      </div>
 
-                <Card>
-                    <Card.Body>
-                    <Card.Title>Card title</Card.Title>
-                        <Card.Text>
-                            This card has supporting text below as a natural lead-in to additional
-                            content.{' '}
-                        </Card.Text>
-                    </Card.Body>
-                <Card.Footer>
-                    <Button variant="primary">Види повеќе...</Button>
-                </Card.Footer>
-                </Card>
-
-                </CardDeck>
-        </div>
-        <ul class="pagination pt-2  justify-content-center">
-          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-          <li class="page-item"><a class="page-link" href="#">1</a></li>
-          <li class="page-item"><a class="page-link" href="#">2</a></li>
-          <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <ul class="pagination pt-5  justify-content-center">
+          <li class="page-item disable=true"><a class="page-link" href="#">Previous</a></li>
+          <li class="page-item "><a class="page-link" href="#">1</a></li>
           <li class="page-item"><a class="page-link" href="#">Next</a></li>
         </ul>
      </div>

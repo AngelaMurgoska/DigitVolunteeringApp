@@ -3,6 +3,8 @@ import Header from './components/Header/Header';
 import Content from './components/Content'
 import './App.css';
 import Footer from "./components/Footer";
+import Sections from "./components/Sections/Sections";
+import Menu from "./components/Menu/Menu";
 
 class App extends Component {
     state={
@@ -226,11 +228,13 @@ class App extends Component {
 
     render(){
     return (
-        <div className="App">
-             <Header/>
-             <Content categories={this.state.categories}/>
-             <Footer/>
-        </div>
+
+             <div className="App">
+                         <Menu/>
+                          <Sections categories={this.state.categories}/>
+                          <Footer/>
+                     </div>
+
     );
   }
 }

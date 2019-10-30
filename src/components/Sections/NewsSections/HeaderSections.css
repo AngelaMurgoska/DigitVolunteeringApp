@@ -1,4 +1,22 @@
 .display{
-padding: 20px;
+padding: 0px;
+
 }
 
+.img-icon {
+    width: 130px;
+    height: 130px;
+    shape-outside: circle();
+    border-radius: 200px;
+    display:-webkit-inline-flex;
+
+}
+
+.slika {
+padding-left: 0px!important;
+display: float-left;
+}
+.naslov{
+padding: 0px!important;
+display: float-left;
+}

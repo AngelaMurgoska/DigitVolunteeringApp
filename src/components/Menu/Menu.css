@@ -18,3 +18,7 @@
 .li-menu-padding{
     padding-left: 15px;
 }
+
+.nav-link:hover{
+    color:#028695;
+}

@@ -18,7 +18,6 @@ class NewsSections extends Component {
       <div className="card-elem">
       <CardDeck>
          <Card>
-            <Card.Img variant="top" src={volunteeringImg1} />
             <Card.Body>
                 <Card.Title>Card title</Card.Title>
                     <Card.Text>
@@ -32,7 +31,6 @@ class NewsSections extends Component {
          </Card>
 
         <Card>
-        <Card.Img variant="top"  src={volunteeringImg2} />
             <Card.Body>
             <Card.Title>Card title</Card.Title>
                 <Card.Text>
@@ -49,7 +47,6 @@ class NewsSections extends Component {
         <br/>
         <CardDeck>
                  <Card>
-                    <Card.Img variant="top" src={volunteeringImg1} />
                     <Card.Body>
                         <Card.Title>Card title</Card.Title>
                             <Card.Text>
@@ -63,7 +60,6 @@ class NewsSections extends Component {
                  </Card>
 
                 <Card>
-                <Card.Img variant="top"  src={volunteeringImg2} />
                     <Card.Body>
                     <Card.Title>Card title</Card.Title>
                         <Card.Text>
@@ -78,7 +74,7 @@ class NewsSections extends Component {
 
                 </CardDeck>
         </div>
-        <ul class="pagination pt-2  justify-content-end">
+        <ul class="pagination pt-2  justify-content-center">
           <li class="page-item"><a class="page-link" href="#">Previous</a></li>
           <li class="page-item"><a class="page-link" href="#">1</a></li>
           <li class="page-item"><a class="page-link" href="#">2</a></li>

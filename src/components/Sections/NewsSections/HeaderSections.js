@@ -23,7 +23,6 @@ class HeaderSections extends Component {
                           <SearchPage/>
                     </div>
                 </div>
-
            </div>
         );
     }

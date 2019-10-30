@@ -8,8 +8,7 @@ class SearchPage extends Component {
             <div className="active-pink-3 active-pink-4 mb-4">
                   <span  className={"d-flex"}>
                     <input className="form-control" type="text" placeholder="Пребарај по клучен збор..."    aria-label="Search" />
-                    <button className={" btn btn-control"}>Барај</button>
-
+                        <button className={"btn btn-rounded active-pink-btn"}>Барај</button>
                   </span>
             </div>
             </div>

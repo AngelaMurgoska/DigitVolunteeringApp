@@ -14,21 +14,31 @@ class NewsSections extends Component {
 
     state={
         IsShowForm:false,
+        eventId: 0,
         form: <span></span>
     };
 
     showForm=(id)=>{
         var toggled=!this.state.IsShowForm;
         console.log(id)
+        console.log(toggled)
         this.setState(state => ({
               IsShowForm: !state.IsShowForm
             }));
+        console.log(this.state.IsShowForm)
+        this.setState(state => ({
+                      eventId: id
+                    }));
+        console.log(this.state.eventId)
+
         if(this.state.IsShowForm){
             this.setState(state => ({
-                      form: <Forma categories={this.props.categories} categoryId={this.props.categoryId} eventId={id}/>
+                     // form: <Forma categories={this.props.categories} categoryId={this.props.categoryId} eventId={this.state.eventId} />
              }));
         }
         console.log(this.state.IsShowForm)
+        console.log(this.state.eventId)
+
     }
 
      chooseEvent = (id) =>{
@@ -42,9 +52,10 @@ class NewsSections extends Component {
         const categoryId=this.props.categoryId;
         let form=<span></span>;
         const shown=this.state.IsShowForm;
-    /*    if(shown){
-            form=<Forma categories={this.props.categories} categoryId={this.props.categoryId} />
-        }*/
+
+       if(shown){
+            form=<Forma categories={this.props.categories} categoryId={this.props.categoryId} eventId={this.state.eventId} />
+        }
         return (
       <div className="container">
 
@@ -59,7 +70,7 @@ class NewsSections extends Component {
                <Card.Text>{this.props.categories[categoryId].nastani[0].sodrzina}</Card.Text>
             </Card.Body>
             <Card.Footer>
-               <Button variant="primary" onClick={this.showForm}>Пријави се</Button>
+               <Button variant="primary" onClick={this.showForm.bind(this, 0)}>Пријави се</Button>
             </Card.Footer>
          </Card>
          <Card>
@@ -69,7 +80,7 @@ class NewsSections extends Component {
                <Card.Text>{this.props.categories[categoryId].nastani[1].sodrzina}</Card.Text>
             </Card.Body>
             <Card.Footer>
-               <Button variant="primary" onClick={this.showForm}>Пријави се</Button>
+               <Button variant="primary" onClick={this.showForm.bind(this, 1)}>Пријави се</Button>
             </Card.Footer>
          </Card>
          <Card>
@@ -91,6 +102,7 @@ class NewsSections extends Component {
           <li class="page-item "><a class="page-link" href="#">1</a></li>
           <li class="page-item"><a class="page-link" href="#">Next</a></li>
         </ul>
+
            {form}
      </div>
     );

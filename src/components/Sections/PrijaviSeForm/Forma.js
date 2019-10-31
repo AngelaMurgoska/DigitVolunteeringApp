@@ -13,6 +13,7 @@ class Forma extends Component {
     render(){
             const categoryId=this.props.categoryId
             const eventId=this.props.eventId
+            console.log(this.props.eventId)
         return (
           <div className={"container"}>
               <div className={"row pt-2"}>

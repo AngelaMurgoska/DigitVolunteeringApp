@@ -10,12 +10,12 @@ class Sections extends Component {
         return (
             <div className={"container-fluid content"}>
                 <div className={"row"}>
-                    <div className={"col-2 pl-5 float-left"}>
+                    <div className={"col-2 pl-5"}>
                         <FilteringSections >
                          <Categories categories={this.props.categories}/>
                         </FilteringSections>
                     </div>
-                    <div className={"col-10 float-left"}>
+                    <div className={"col-10"}>
                         <NewsSections categories={this.props.categories}/>
                     </div>
                 </div>

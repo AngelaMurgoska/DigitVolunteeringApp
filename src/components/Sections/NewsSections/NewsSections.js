@@ -6,13 +6,10 @@ import Button from 'react-bootstrap/Button';
 
 import HeaderSections from './HeaderSections';
 
-import volunteeringImg1 from '../../../assets/images/involved_volunteering.jpg'
-import volunteeringImg2 from '../../../assets/images/Tips-for-Volunteering-With-Kids.jpg'
-import volunteeringImg3 from '../../../assets/images/Volunteering is Good for You and Your Kids.jpg'
 class NewsSections extends Component {
     render(){
         return (
-      <div className="content">
+      <div className="container">
 
       <HeaderSections categories={this.props.categories}/>
 

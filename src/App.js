@@ -5,7 +5,8 @@ import './App.css';
 import Footer from "./components/Footer";
 import Sections from "./components/Sections/Sections";
 import Menu from "./components/Menu/Menu";
-
+import PrijaviSeForm from "./components/Sections/PrijaviSeForm/PrijaviSeForm";
+import VolnterStory from "./components/VolnterStory"
 class App extends Component {
     state={
         categories:[
@@ -230,8 +231,8 @@ class App extends Component {
     return (
 
              <div className="App">
-                         <Menu/>
-                          <Sections categories={this.state.categories}/>
+                          <Menu/>
+                          <VolnterStory/>
                           <Footer/>
                      </div>
 

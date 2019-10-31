@@ -6,83 +6,53 @@ import Button from 'react-bootstrap/Button';
 
 import HeaderSections from './HeaderSections';
 
-import volunteeringImg1 from '../../../assets/images/involved_volunteering.jpg'
-import volunteeringImg2 from '../../../assets/images/Tips-for-Volunteering-With-Kids.jpg'
-import volunteeringImg3 from '../../../assets/images/Volunteering is Good for You and Your Kids.jpg'
 class NewsSections extends Component {
     render(){
+        const categoryId=this.props.categoryId;
         return (
-      <div className={"container"}>
+      <div className="container">
 
-        <HeaderSections/>
+      <HeaderSections categories={this.props.categories} categoryId={this.props.categoryId}/>
+
       <div className="card-elem">
-      <CardDeck>
+         <CardDeck>
          <Card>
-            <Card.Img variant="top" src={volunteeringImg1} />
             <Card.Body>
-                <Card.Title>Card title</Card.Title>
-                    <Card.Text>
-                        This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.
-                    </Card.Text>
+               <Card.Title className={"font-weight-bold"}>{this.props.categories[categoryId].nastani[0].naslov}</Card.Title>
+               <hr/>
+               <Card.Text>{this.props.categories[categoryId].nastani[0].sodrzina}</Card.Text>
             </Card.Body>
             <Card.Footer>
-                <Button variant="primary">Види повеќе...</Button>
+               <Button variant="primary">Пријави се</Button>
             </Card.Footer>
          </Card>
-
-        <Card>
-        <Card.Img variant="top"  src={volunteeringImg2} />
+         <Card>
             <Card.Body>
-            <Card.Title>Card title</Card.Title>
-                <Card.Text>
-                    This card has supporting text below as a natural lead-in to additional
-                    content.{' '}
-                </Card.Text>
+               <Card.Title className={"font-weight-bold"}>{this.props.categories[categoryId].nastani[1].naslov}</Card.Title>
+               <hr/>
+               <Card.Text>{this.props.categories[categoryId].nastani[1].sodrzina}</Card.Text>
             </Card.Body>
-        <Card.Footer>
-            <Button variant="primary">Види повеќе...</Button>
-        </Card.Footer>
-        </Card>
+            <Card.Footer>
+               <Button variant="primary">Пријави се</Button>
+            </Card.Footer>
+         </Card>
+         <Card>
+            <Card.Body>
+               <Card.Title className={"font-weight-bold"}>{this.props.categories[categoryId].nastani[2].naslov}</Card.Title>
+               <hr/>
+               <Card.Text>{this.props.categories[categoryId].nastani[2].sodrzina}</Card.Text>
+            </Card.Body>
+            <Card.Footer>
+               <Button variant="primary">Пријави се</Button>
+            </Card.Footer>
+         </Card>
+         </CardDeck>
 
-        </CardDeck>
-        <br/>
-        <CardDeck>
-                 <Card>
-                    <Card.Img variant="top" src={volunteeringImg1} />
-                    <Card.Body>
-                        <Card.Title>Card title</Card.Title>
-                            <Card.Text>
-                                This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.
-                            </Card.Text>
-                    </Card.Body>
-                    <Card.Footer>
-                        <Button variant="primary">Види повеќе...</Button>
-                    </Card.Footer>
-                 </Card>
+      </div>
 
-                <Card>
-                <Card.Img variant="top"  src={volunteeringImg2} />
-                    <Card.Body>
-                    <Card.Title>Card title</Card.Title>
-                        <Card.Text>
-                            This card has supporting text below as a natural lead-in to additional
-                            content.{' '}
-                        </Card.Text>
-                    </Card.Body>
-                <Card.Footer>
-                    <Button variant="primary">Види повеќе...</Button>
-                </Card.Footer>
-                </Card>
-
-                </CardDeck>
-        </div>
-        <ul class="pagination pt-2  justify-content-end">
-          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-          <li class="page-item"><a class="page-link" href="#">1</a></li>
-          <li class="page-item"><a class="page-link" href="#">2</a></li>
-          <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <ul class="pagination pt-5  justify-content-center">
+          <li class="page-item disable=true"><a class="page-link" href="#">Previous</a></li>
+          <li class="page-item "><a class="page-link" href="#">1</a></li>
           <li class="page-item"><a class="page-link" href="#">Next</a></li>
         </ul>
      </div>

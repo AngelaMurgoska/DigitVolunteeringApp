@@ -1,13 +1,10 @@
 import React, {Component} from 'react';
-import Header from './components/Header/Header';
-import Content from './components/Content'
-import './App.css';
-import Footer from "./components/Footer";
-import Sections from "./components/Sections/Sections";
-import Menu from "./components/Menu/Menu";
-import DetailsPage from "./components/DetailsPage/DetailsPage";
+import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import Menu from "../Menu/Menu";
+import Footer from "../Footer";
+import Sections from "../Sections/Sections";
 
-class App extends Component {
+class DetailsPage extends Component{
     state={
         categories:[
             {
@@ -242,23 +239,27 @@ class App extends Component {
         ]
     }
 
+
     chooseCategory = (id) =>{
         console.log(id);
         let path = `/details/`+id;
         this.props.history.push(path);
+        window.scrollTo(0, 0)
     }
 
-    render(){
-    return (
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
 
-             <div className="App">
-                          <Header/>
-                          <Content categories={this.state.categories} chooseCategory={this.chooseCategory}/>
-                          <Footer/>
-             </div>
-
-    );
-  }
+    render() {
+        return(
+            <div>
+                <Menu/>
+                <Sections categories={this.state.categories} chooseCategory={this.chooseCategory} categoryId={this.props.match.params.id}/>
+                <Footer/>
+            </div>
+        )
+    }
 }
 
-export default App;
+export default DetailsPage;

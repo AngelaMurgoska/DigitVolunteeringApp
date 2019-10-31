@@ -12,11 +12,37 @@ padding: 10px;
 }
 h1{
 padding: 10px;
-text-align: centre;
+text-align: center;
 }
 
 .image{
  width:100% !important;
   height:100% !important;
   background-image:url('https://www.ageuk.org.uk/bp-assets/globalassets/lindsey/images/volunteering/hands_med.jpg');
-  }
+}
+
+.stories-title{
+   color: #243665;
+   margin-top: 8%;
+}
+
+.text-story-color{
+ color: #243665;
+}
+
+.pagination-text-color{
+ color: #243665 !important;
+}
+
+.content-hr{
+ background: #243665;
+ width: 50%;
+ padding-bottom: 2px;
+ margin-bottom: 35px;
+ margin-top: 0;
+}
+
+.story-container-border{
+ border: 1px solid #243665;
+ color: #243665 !important;
+}

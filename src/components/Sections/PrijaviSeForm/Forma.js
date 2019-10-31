@@ -11,14 +11,16 @@ import "../NewsSections/HeaderSections.css"
 
 class Forma extends Component {
     render(){
+            const categoryId=this.props.categoryId
+            const eventId=this.props.eventId
         return (
           <div className={"container"}>
               <div className={"row pt-2"}>
                 <div className={"col-2"}>
-                   <img className="img-icon" src={this.props.categories[0].backgroundUrl}/>
+                   <img className="img-icon" src={this.props.categories[categoryId].backgroundUrl}/>
                 </div>
                 <div className={"col"}>
-                   <h2 className={"font-weight-bold justify content centre"}>{this.props.categories[0].nastani[0].naslov}</h2>
+                   <h2 className={"font-weight-bold justify content centre"}>{this.props.categories[categoryId].nastani[eventId].naslov}</h2>
                 </div>
               </div>
               <br/>

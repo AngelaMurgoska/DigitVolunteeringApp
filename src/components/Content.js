@@ -14,7 +14,7 @@ class Content extends Component {
             <SectionComponent>
                 <h2 className={"h2 text-center mt-4 mb-3 h-content-color font-weight-bold"}>Волонтерски категории</h2>
                 <hr className={"content-hr"}/>
-                <Categories  categories={this.props.categories}  />
+                <Categories  categories={this.props.categories} chooseCategory={this.props.chooseCategory}  />
             </SectionComponent>
             <SectionComponent>
                 <hr className={"content-hr"}/>

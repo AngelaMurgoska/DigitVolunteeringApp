@@ -24,6 +24,7 @@
 
 .container-category:hover .overlay {
     opacity: 1;
+    cursor: pointer;
 }
 
 .container-category{

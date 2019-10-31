@@ -14,7 +14,7 @@ class Menu extends Component {
                     <a className="navbar-brand" href="#">
                         <div>
                             <img src={vimage}/>
-                            <div className={"menu-text-brand menu-text"}>{this.state.title}</div>
+                            <div className={"menu-text-brand menu-text"}><a className={"menu-brand"} href={"/"}>{this.state.title}</a></div>
                         </div>
                     </a>
                     <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
@@ -25,7 +25,7 @@ class Menu extends Component {
                     <div className="collapse navbar-collapse" id="navbarResponsive">
                         <ul className="navbar-nav ml-auto">
                             <li className="nav-item">
-                                <a className="nav-link menu-text li-menu-padding" href="#">Искуства од волонтери</a>
+                                <a className="nav-link menu-text li-menu-padding" href="/stories">Искуства од волонтери</a>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link menu-text li-menu-padding" href="#">Најава</a>

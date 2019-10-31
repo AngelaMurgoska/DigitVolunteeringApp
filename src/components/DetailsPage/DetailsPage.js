@@ -1,13 +1,10 @@
 import React, {Component} from 'react';
-import Header from './components/Header/Header';
-import Content from './components/Content'
-import './App.css';
-import Footer from "./components/Footer";
-import Sections from "./components/Sections/Sections";
-import Menu from "./components/Menu/Menu";
-import DetailsPage from "./components/DetailsPage/DetailsPage";
+import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import Menu from "../Menu/Menu";
+import Footer from "../Footer";
+import Sections from "../Sections/Sections";
 
-class App extends Component {
+class DetailsPage extends Component{
     state={
         categories:[
             {
@@ -137,6 +134,13 @@ class App extends Component {
                         sodrzina:"Дводневна работилница во просториите на Канцеларија 19 со цел стекнување на вештини за деловно изразување при работно интервју." +
                             "Почеток на 2.11.2019г. во 10 часот."
 
+                    },
+                    {
+                        redenBroj:3,
+                        naslov:"Како да аплицирам за работно место",
+                        sodrzina:"Дводневна работилница во просториите на Канцеларија 19 со цел стекнување на вештини за деловно изразување при работно интервју." +
+                            "Почеток на 2.11.2019г. во 10 часот."
+
                     }
 
 
@@ -203,7 +207,10 @@ class App extends Component {
                         naslov:"Pro bonо - работа на судски случаи за клиенти кои не можат да си дозволат плаќање на адвокатските услуги",
                         sodrzina:"За детални информации околу условите и тежината" +
                             "на случајот на меил advocateLaw@gmail.com или телефон 078 996 991."
+
                     }
+
+
                 ]
             },
             {
@@ -231,9 +238,10 @@ class App extends Component {
                     },
                     {
                         redenBroj:3,
-                        naslov:"Pro bonо - работа на судски случаи за клиенти кои не можат да си дозволат плаќање на адвокатските услуги",
-                        sodrzina:"За детални информации околу условите и тежината" +
-                            "на случајот на меил advocateLaw@gmail.com или телефон 078 996 991."
+                        naslov:"Волонтери од Црвен Крст се потребни за на концертот на Стинг на 13ти Ноември",
+                        sodrzina:"На 13ти Ноември ќе се одржи концертот на Стинг, во арена Борис Трајковски." +
+                            "Потребни се волонтери кои имаат солидни практични знаења од областа на медицината." +
+                            "за Пријавување пријавете се на 078 654 339 или на medvolon@gmail.com."
 
                     }
 
@@ -245,22 +253,20 @@ class App extends Component {
     }
 
     chooseCategory = (id) =>{
-             console.log(id);
-             let path = `/details/`+id;
-             this.props.history.push(path);
-         }
+        console.log(id);
+        let path = `/details/`+id;
+        this.props.history.push(path);
+    }
 
-    render(){
-    return (
-
-             <div className="App">
-                          <Header/>
-                          <Content categories={this.state.categories} chooseCategory={this.chooseCategory} />
-                          <Footer/>
-             </div>
-
-    );
-  }
+    render() {
+        return(
+            <div>
+                <Menu/>
+                <Sections categories={this.state.categories} chooseCategory={this.chooseCategory} categoryId={this.props.match.params.id}/>
+                <Footer/>
+            </div>
+        )
+    }
 }
 
-export default App;
+export default DetailsPage;

@@ -12,11 +12,11 @@ class Sections extends Component {
                 <div className={"row"}>
                     <div className={"col-2 pl-5 float-left"}>
                         <FilteringSections >
-                         <Categories categories={this.props.categories}/>
+                         <Categories categories={this.props.categories} chooseCategory={this.props.chooseCategory}/>
                         </FilteringSections>
                     </div>
                     <div className={"col-10 float-left"}>
-                        <NewsSections categories={this.props.categories}/>
+                        <NewsSections categories={this.props.categories} categoryId={this.props.categoryId}/>
                     </div>
                 </div>
             </div>

@@ -3,6 +3,15 @@
     color:#8bd8bd;
 }
 
+.menu-brand{
+    color: #8bd8bd;
+}
+
+.menu-brand:hover{
+    text-decoration: none;
+    color:#028695;
+}
+
 .menu-text-brand{
     display: inline-block;
     vertical-align: bottom;

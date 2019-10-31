@@ -7,7 +7,7 @@ import FooterSocials from "./FooterSocials/FooterSocials";
 class Footer extends Component {
     render(){
         return (
-            <div className={"container-fluid footer-bg pt-3 pb-4 mt-4"}>
+            <div className={"container-fluid footer-bg pt-3 pb-4"}>
                 <div className={"row"}>
                     <div className={"col-7"}>
                         <FooterLinks/>

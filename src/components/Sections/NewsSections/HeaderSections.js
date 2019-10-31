@@ -8,14 +8,15 @@ import Image from 'react-bootstrap/Image'
 
 class HeaderSections extends Component {
     render(){
+        const categoryId=this.props.categoryId
         return (
             <div className={"container-fluid display"}>
                 <div className={"row "}>
                             <div className={"col slika"}>
-                                <img className="img-icon" src={this.props.categories[0].backgroundUrl}/>
+                                <img className="img-icon" src={this.props.categories[categoryId].backgroundUrl}/>
                             </div>
                             <div className={"col naslov"}>
-                                 <h1 className={"font-weight-bold"}>{this.props.categories[0].title}</h1>
+                                 <h1 className={"font-weight-bold"}>{this.props.categories[categoryId].title}</h1>
                             </div>
                 </div>
                 <div className="row pt-5">

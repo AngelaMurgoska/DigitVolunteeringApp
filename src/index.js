@@ -2,14 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import VolnterStory from './components/VolnterStory'
+import StoryPage from './components/StoryPage/StoryPage'
 import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
 import * as serviceWorker from './serviceWorker';
+import DetailsPage from "./components/DetailsPage/DetailsPage";
 
 const routing=(
     <Router>
         <div>
-            <Route exact path="/stories" component={VolnterStory}/>
+            <Route exact path="/stories" component={StoryPage}/>
+            <Route exact path="/details/:id" component={DetailsPage}/>
             <Route exact path="/" component={App}/>
         </div>
     </Router>

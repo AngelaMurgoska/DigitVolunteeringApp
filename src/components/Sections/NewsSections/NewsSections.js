@@ -6,23 +6,21 @@ import Button from 'react-bootstrap/Button';
 
 import HeaderSections from './HeaderSections';
 
-import volunteeringImg1 from '../../../assets/images/involved_volunteering.jpg'
-import volunteeringImg2 from '../../../assets/images/Tips-for-Volunteering-With-Kids.jpg'
-import volunteeringImg3 from '../../../assets/images/Volunteering is Good for You and Your Kids.jpg'
 class NewsSections extends Component {
     render(){
+        const categoryId=this.props.categoryId;
         return (
-      <div className="content">
+      <div className="container">
 
-      <HeaderSections categories={this.props.categories}/>
+      <HeaderSections categories={this.props.categories} categoryId={this.props.categoryId}/>
 
       <div className="card-elem">
          <CardDeck>
          <Card>
             <Card.Body>
-               <Card.Title className={"font-weight-bold"}>{this.props.categories[0].nastani[0].naslov}</Card.Title>
+               <Card.Title className={"font-weight-bold"}>{this.props.categories[categoryId].nastani[0].naslov}</Card.Title>
                <hr/>
-               <Card.Text>{this.props.categories[0].nastani[0].sodrzina}</Card.Text>
+               <Card.Text>{this.props.categories[categoryId].nastani[0].sodrzina}</Card.Text>
             </Card.Body>
             <Card.Footer>
                <Button variant="primary">Пријави се</Button>
@@ -30,9 +28,9 @@ class NewsSections extends Component {
          </Card>
          <Card>
             <Card.Body>
-               <Card.Title className={"font-weight-bold"}>{this.props.categories[0].nastani[1].naslov}</Card.Title>
+               <Card.Title className={"font-weight-bold"}>{this.props.categories[categoryId].nastani[1].naslov}</Card.Title>
                <hr/>
-               <Card.Text>{this.props.categories[0].nastani[1].sodrzina}</Card.Text>
+               <Card.Text>{this.props.categories[categoryId].nastani[1].sodrzina}</Card.Text>
             </Card.Body>
             <Card.Footer>
                <Button variant="primary">Пријави се</Button>
@@ -40,9 +38,9 @@ class NewsSections extends Component {
          </Card>
          <Card>
             <Card.Body>
-               <Card.Title className={"font-weight-bold"}>{this.props.categories[0].nastani[2].naslov}</Card.Title>
+               <Card.Title className={"font-weight-bold"}>{this.props.categories[categoryId].nastani[2].naslov}</Card.Title>
                <hr/>
-               <Card.Text>{this.props.categories[0].nastani[2].sodrzina}</Card.Text>
+               <Card.Text>{this.props.categories[categoryId].nastani[2].sodrzina}</Card.Text>
             </Card.Body>
             <Card.Footer>
                <Button variant="primary">Пријави се</Button>

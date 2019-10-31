@@ -14,7 +14,7 @@ class VolnterStory extends Component {
         return (
 <div>
 
-            <div className={"container"}>
+            <div className={"container mt-5"}>
                 <h1 className={"text-center"}>Искуства на волонтери</h1>
                 <div className={"row p-5"}>
                      <div className={"col-4"}>

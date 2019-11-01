@@ -15,7 +15,12 @@
     color: #243665;
     cursor: pointer;
 }
-
+i{
+    display: -webkit-inline-flex;
+}
+a:hover{
+    transform: translate(-2px);
+}
 .btn-footer-link{
     text-align: center;
 }

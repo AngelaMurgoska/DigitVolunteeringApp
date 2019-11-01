@@ -266,7 +266,7 @@ class App extends Component {
                           <Header/>
                           <Content categories={this.state.categories} chooseCategory={this.chooseCategory} />
                           <Footer/>
-                          <DonateForm/>
+
 
 
              </div>

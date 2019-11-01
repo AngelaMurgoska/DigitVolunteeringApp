@@ -254,17 +254,17 @@ class App extends Component {
     }
 
     chooseCategory = (id) =>{
-        console.log(id);
-        let path = `/details/`+id;
-        this.props.history.push(path);
-    }
+             console.log(id);
+             let path = `/details/`+id;
+             this.props.history.push(path);
+         }
 
     render(){
     return (
 
              <div className="App">
                           <Header/>
-                          <Content categories={this.state.categories} chooseCategory={this.chooseCategory}/>
+                          <Content categories={this.state.categories} chooseCategory={this.chooseCategory} />
                           <Footer/>
                           <DonateForm/>
 

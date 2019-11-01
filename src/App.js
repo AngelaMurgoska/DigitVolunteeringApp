@@ -6,7 +6,9 @@ import Footer from "./components/Footer";
 import Sections from "./components/Sections/Sections";
 import Menu from "./components/Menu/Menu";
 import DetailsPage from "./components/DetailsPage/DetailsPage";
-
+import DonateForm from "./components/DonateForm.js";
+//import RegistracijaForma from "./components/RegistracijaForma.js";
+//import SignInForm from "./components/SignInForm.js";
 class App extends Component {
     state={
         categories:[
@@ -136,6 +138,15 @@ class App extends Component {
                         sodrzina:"Дводневна работилница во просториите на Канцеларија 19 со цел стекнување на вештини за деловно изразување при работно интервју." +
                             "Почеток на 2.11.2019г. во 10 часот.",
                         lokacija:"Скопје"
+                    },
+                    {
+                        redenBroj:3,
+                        naslov:"Бесплатно предавање за рециклирање и начини за подобрување на животната околина",
+                        sodrzina:"Студенти од Машински факултет од смерот за екологија, ќе одржуваат бесплатно предавање за начините на кои може да се подигне еколошката свест." +
+                            "Ќе предложат одредени современи методи за рециклирање и одредени едноставни чекори со кои ќе дојдат ефиксни еколошки решенија." +
+                            "Предавањето ќе се одржи во амфитеатарот на Машинскиот Факултет при Уким, на 27.11.2019г. во 20часот.",
+
+                        lokacija:"Скопје"
                     }
 
 
@@ -255,6 +266,9 @@ class App extends Component {
                           <Header/>
                           <Content categories={this.state.categories} chooseCategory={this.chooseCategory}/>
                           <Footer/>
+                          <DonateForm/>
+
+
              </div>
 
     );

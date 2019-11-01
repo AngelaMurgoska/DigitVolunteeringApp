@@ -136,6 +136,13 @@ class App extends Component {
                         sodrzina:"Дводневна работилница во просториите на Канцеларија 19 со цел стекнување на вештини за деловно изразување при работно интервју." +
                             "Почеток на 2.11.2019г. во 10 часот.",
                         lokacija:"Скопје"
+                    },
+                    {
+                        redenBroj:3,
+                        naslov:"Како да аплицирам за работно место",
+                        sodrzina:"Дводневна работилница во просториите на Канцеларија 19 со цел стекнување на вештини за деловно изразување при работно интервју." +
+                            "Почеток на 2.11.2019г. во 10 часот.",
+                        lokacija:"Скопје"
                     }
 
 
@@ -248,11 +255,16 @@ class App extends Component {
         this.props.history.push(path);
     }
 
+    searchByLocation=(location)=> {
+        console.log(location);
+        let path = '/events/' + location;
+        console.log(this.state.categories.map((k)=>k.nastani).filter(k=>k.lokacija==location));
+    }
     render(){
     return (
 
              <div className="App">
-                          <Header/>
+                          <Header searchByLocation={this.searchByLocation}/>
                           <Content categories={this.state.categories} chooseCategory={this.chooseCategory}/>
                           <Footer/>
              </div>

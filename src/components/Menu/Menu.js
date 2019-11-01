@@ -1,44 +1,50 @@
-import React, {Component} from 'react';
+import React, {useContext} from 'react';
 import vimage from '../../assets/images/icon3.png'
 import './Menu.css'
-import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import {
+    Collapse,
+    Navbar,
+    NavbarToggler,
+    NavbarBrand,
+    Nav,
+    NavItem,
+    NavLink,
+  } from 'reactstrap';
+import {AuthContext} from "../../Auth";
+import MenuLinksLoggedIn from "../MenuLinksLoggedIn/MenuLinksLoggedIn";
+import MenuLinksNotLoggedIn from "../MenuLinksNotLoggedIn/MenuLinksNotLoggedIn";
 
-class Menu extends Component {
-    state= {
-        title:"Волонтирај"
-    }
-    render(){
+function Menu (){
+
+    const {currentUser} = useContext(AuthContext);
+
+    if(currentUser==null)
         return (
-            <nav className="navbar fixed-top navbar-expand-lg menu-bg">
+            <Navbar className="navbar fixed-top navbar-expand-lg menu-bg">
                 <div className="container">
-                    <a className="navbar-brand" href="#">
+                    <NavbarBrand href="/">
                         <div>
                             <img src={vimage}/>
-                            <div className={"menu-text-brand menu-text"}><a className={"menu-brand"} href={"/"}>{this.state.title}</a></div>
+                            <div className={"menu-text-brand menu-text"}><a className={"menu-brand"} href={"/"}>Волонтирај</a></div>
                         </div>
-                    </a>
-                    <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-                            data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
-                    <div className="collapse navbar-collapse" id="navbarResponsive">
-                        <ul className="navbar-nav ml-auto">
-                            <li className="nav-item">
-                                <a className="nav-link menu-text li-menu-padding" href="/stories">Искуства од волонтери</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link menu-text li-menu-padding" href="#">Најава</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link menu-text li-menu-padding" href="#">Регистрација</a>
-                            </li>
-                        </ul>
-                    </div>
+                    </NavbarBrand>
+                    <MenuLinksNotLoggedIn/>
                 </div>
-            </nav>
+            </Navbar>
         );
-    }
+    else return(
+        <Navbar className="navbar fixed-top navbar-expand-lg menu-bg">
+            <div className="container">
+                <NavbarBrand href="/">
+                    <div>
+                        <img src={vimage}/>
+                        <div className={"menu-text-brand menu-text"}><a className={"menu-brand"} href={"/"}>Волонтирај</a></div>
+                    </div>
+                </NavbarBrand>
+                <MenuLinksLoggedIn/>
+            </div>
+        </Navbar>
+    )
 }
 
 export default Menu;

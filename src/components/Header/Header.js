@@ -11,7 +11,7 @@ class Header extends Component {
         return (
             <div className={"container-fluid clear-padding"}>
             <Menu/>
-            <CarouselComponent/>
+            <CarouselComponent searchByLocation={this.props.searchByLocation}/>
             </div>
         );
     }

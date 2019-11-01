@@ -19,11 +19,11 @@ class FooterLinks extends Component {
              <div className={"links-display"}>
                  <ul className={"ul-links"}>
                      <li className={"h5"}>Категории</li>
-                     <li className={"li-item"}>Образование</li>
-                     <li className={"li-item"}>Екологија</li>
-                     <li className={"li-item"}>Филмски фестивали</li>
-                     <li className={"li-item"}>Медицина</li>
-                     <li className={"li-item"}>Правни совети</li>
+                     <li className={"li-item"}><a href="/details/3">Образование</a></li>
+                     <li className={"li-item"}><a href="/details/2">Екологија</a></li>
+                     <li className={"li-item"}><a href="/details/0">Филмски фестивали</a></li>
+                     <li className={"li-item"}><a href="/details/6">Медицина</a></li>
+                     <li className={"li-item"}><a href="/details/5">Правни совети</a></li>
                  </ul>
              </div>
              <div className={"links-display"}>
@@ -31,9 +31,9 @@ class FooterLinks extends Component {
                      <div className={"col"}>
                          <ul className={"ul-links"}>
                              <li className={"h5"}>Инфо</li>
-                             <li className={"li-item"}>За нас</li>
-                             <li className={"li-item"}>Информации</li>
-                             <li className={"li-item"}>Контакт</li>
+                             <li className={"li-item"}><a href="/details/5">За нас</a></li>
+                             <li className={"li-item"}><a href="/details/5">Информации</a></li>
+                             <li className={"li-item"}><a href="/details/5">Контакт</a></li>
                          </ul>
                      </div>
                  </div>

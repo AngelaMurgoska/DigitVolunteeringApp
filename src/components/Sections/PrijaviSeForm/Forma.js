@@ -41,14 +41,10 @@ class Forma extends Component {
                  </Form.Row>
 
                  <Form.Group controlId="formGridAddress1">
-                   <Form.Label>Адреса1</Form.Label>
+                   <Form.Label>Адреса</Form.Label>
                    <Form.Control placeholder="" />
                  </Form.Group>
 
-                 <Form.Group controlId="formGridAddress2">
-                   <Form.Label>Адреса 2</Form.Label>
-                   <Form.Control placeholder="апартман , студио..." />
-                 </Form.Group>
                   <Form.Group controlId="formGridAddress2">
                     <Form.Label>Датум на раѓање</Form.Label>
                     <Form.Control placeholder="дд/мм/гггг" />

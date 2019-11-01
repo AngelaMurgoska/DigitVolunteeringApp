@@ -11,12 +11,14 @@ import LogIn from "./components/LogIn"
 import Register from "./components/Register/Register"
 import {AuthProvider} from "./Auth";
 import EventDetails from "./components/EventDetails/EventDetails"
+import DonateForm from "./components/DonateForm.js"
 
 const routing=(
     <AuthProvider>
         <Router>
             <div>
                 <Route exact path="/stories" component={StoryPage}/>
+                <Route exact path="/donateForm" component={DonateForm}/>
                 <Route exact path="/login" component={LogIn}/>
                 <Route exact path="/register" component={Register}/>
                 <Route exact path="/details/:id" component={DetailsPage}/>

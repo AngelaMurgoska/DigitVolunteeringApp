@@ -8,7 +8,6 @@ import { withRouter } from "react-router";
 
 const Register= ({ history }) => {
     const handleSignUp = useCallback(async event => {
-        alert("got here")
         event.preventDefault();
         const { email, password } = event.target.elements;
         try {

@@ -32,10 +32,20 @@ class DonateForm extends Component{
                         </Form.Group>
                     </Form.Row>
 
-                    <Form.Group controlId="formGridAddress1">
-                        <Form.Label><b>Назнака за донација</b></Form.Label>
-                        <Form.Control placeholder="Објаснете за кого донирате " />
-                    </Form.Group>
+
+                     <Form.Row>
+                      <Form.Group controlId="formGridCity" className={"pr-2"}>
+                           <Form.Label>Подржани цели на донирање:</Form.Label>
+                           <Form.Control as="select">
+                                           <option>Избери донација...</option>
+                                           <option>Изградба на основно училиште</option>
+                                           <option>Набавка на лекови за лица со ретки болести</option>
+                                           <option>Пошумување на опожарената област во Велес</option>
+                                           <option>СОС Детско село</option>
+                           </Form.Control>
+                       </Form.Group>
+
+                      </Form.Row>
                     <Form.Group controlId="formGridAddress1">
                         <Form.Label><b>Матичен број</b></Form.Label>
                         <Form.Control placeholder="ЕМБГ" />

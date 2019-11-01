@@ -6,6 +6,7 @@
 .card-text card-title card-body card-header card{
  border-color: #f48fb1 !important;
  color: #f48fb1 !important;
+
 }
 h2{
 padding: 10px;
@@ -28,6 +29,7 @@ text-align: center;
 
 .text-story-color{
  color: #243665;
+
 }
 
 .pagination-text-color{
@@ -45,4 +47,6 @@ text-align: center;
 .story-container-border{
  border: 1px solid #243665;
  color: #243665 !important;
+ height: 100%;
+
 }

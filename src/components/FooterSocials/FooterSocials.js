@@ -15,7 +15,6 @@ class FooterSocials extends Component {
                 <div className={"text-center footer-text h5"}>Заследи нè</div>
                 <hr className={"hr-footer-link-color"}/>
                 <div className={"text-center footer-text h5"}>
-
                     <SocialFollows/>
                 </div>
             </div>

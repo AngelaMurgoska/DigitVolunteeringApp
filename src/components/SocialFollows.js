@@ -8,6 +8,7 @@ import {
     faYoutube,
     faInstagram
 }from '@fortawesome/free-brands-svg-icons';
+
 export default  ()=> (
     <div className={"socialContainer"}>
         <a><FontAwesomeIcon icon={faFacebook}size="2x"/> </a>
@@ -16,7 +17,6 @@ export default  ()=> (
         <FontAwesomeIcon icon={faYoutube}size="2x"/>
         </a>
         <a><FontAwesomeIcon icon={faInstagram}size="2x"/></a>
-
 
     </div>
 )

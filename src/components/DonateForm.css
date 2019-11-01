@@ -21,3 +21,10 @@ input{
 .kopce{
     position: center;
 }
+.content-hr{
+    background: #243665;
+    width: 50%;
+    padding-bottom: 2px;
+    margin-bottom: 35px;
+    margin-top: 0;
+}

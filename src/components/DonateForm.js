@@ -18,6 +18,8 @@ class DonateForm extends Component{
             <br/>
             <div className={"container"}>
                 <Form>
+                    <h3 className="{justify-content-start}">Донирај овде: </h3>
+                    <br/>
                     <Form.Row className={"pr-2"}>
                         <Form.Group  controlId="formGridEmail" className={"pr-2"}>
                             <Form.Label><b>Име</b></Form.Label>

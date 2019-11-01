@@ -23,7 +23,7 @@ class NewsSections extends Component {
         console.log(id)
         console.log(toggled)
         this.setState(state => ({
-              IsShowForm: !state.IsShowForm
+              IsShowForm: true
             }));
         console.log(this.state.IsShowForm)
         this.setState(state => ({

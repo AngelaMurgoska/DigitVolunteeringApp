@@ -1,5 +1,7 @@
 .vl {
   border-left: 1px solid gray;
   height: 500px;
-  display: d-inline;
+}
+.icon{
+width: 50%;
 }

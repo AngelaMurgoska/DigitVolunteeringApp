@@ -4,6 +4,7 @@ import './Footer.css'
 import FooterLinks from "./FooterLinks/FooterLinks";
 import FooterSocials from "./FooterSocials/FooterSocials";
 
+
 class Footer extends Component {
     render(){
         return (

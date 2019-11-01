@@ -7,7 +7,7 @@ class FilteringSections extends Component {
         return (
             <div className={"container pt-3 "}>
              <h5 className={"font-weight-bold pt-2"}>Волонтерски категории</h5>
-               <div className={"row pt-3"}>
+               <div className={"row pt-3 icon"}>
                     {this.props.children}
                </div>
 

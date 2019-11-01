@@ -8,22 +8,23 @@ import './CarouselComponent.css'
 import SearchBar from "../SearchBar/SearchBar";
 
 
-export default () => (
-    <div className={"content-position"}>
+function CarouselComponent(props) {
+    return <div className={"content-position"}>
         <Carousel autoPlay={true} showIndicators={false} showArrows={false} width={"100%"} showThumbs={false}>
             <div>
-                <img src={volunteeringImg1} />
+                <img src={volunteeringImg1}/>
             </div>
             <div>
                 <img src={volunteeringImg2}/>
             </div>
             <div>
-                <img src={volunteeringImg3} />
+                <img src={volunteeringImg3}/>
             </div>
         </Carousel>
         <span className="centered">
-            <SearchBar/>
+            <SearchBar searchByLocation={props.searchByLocation}/>
         </span>
     </div>
+}
 
-);
+export default CarouselComponent;

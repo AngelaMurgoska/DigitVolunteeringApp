@@ -20,7 +20,7 @@ class SitePost extends Component {
                         Приклучи се и ти, донирај во целите кои се поддржани од волонтирај.мк и направи свој придонес.
                     </div>
                     <div className={"pb-2"}>
-                        <button className={"btn-site-post mt-4 py-4 btn active-pink-btn btn-text"}>Донирај</button>
+                        <button className={"btn-site-post mt-4 py-4 btn active-pink-btn btn-text"}><a href="/donateForm"> Донирај </a>  </button>
                     </div>
                 </div>
             </div>

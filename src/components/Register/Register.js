@@ -26,6 +26,8 @@ const Register= ({ history }) => {
                   <SectionComponent>
                       <RegisterData handleSignUp={handleSignUp}/>
                   </SectionComponent>
+                  <SectionComponent/>
+                  <SectionComponent/>
                   <Footer/>
               </div>
           );

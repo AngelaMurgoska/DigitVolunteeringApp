@@ -30,18 +30,18 @@ class Forma extends Component {
                <Form>
                  <Form.Row className={"pr-2"}>
                    <Form.Group  controlId="formGridEmail" className={"pr-2"}>
-                     <Form.Label>Email</Form.Label>
-                     <Form.Control type="email" placeholder="Enter email" />
+                     <Form.Label>Име</Form.Label>
+                     <Form.Control type="email" placeholder="Внеси име" />
                    </Form.Group>
 
                    <Form.Group  controlId="formGridPassword">
-                     <Form.Label>Лозинка</Form.Label>
-                     <Form.Control type="password" placeholder="Лозинка" />
+                     <Form.Label>Презиме</Form.Label>
+                     <Form.Control type="password" placeholder="Внеси презиме" />
                    </Form.Group>
                  </Form.Row>
 
                  <Form.Group controlId="formGridAddress1">
-                   <Form.Label>Адреса</Form.Label>
+                   <Form.Label>Адреса1</Form.Label>
                    <Form.Control placeholder="" />
                  </Form.Group>
 
@@ -49,6 +49,10 @@ class Forma extends Component {
                    <Form.Label>Адреса 2</Form.Label>
                    <Form.Control placeholder="апартман , студио..." />
                  </Form.Group>
+                  <Form.Group controlId="formGridAddress2">
+                    <Form.Label>Датум на раѓање</Form.Label>
+                    <Form.Control placeholder="дд/мм/гггг" />
+                  </Form.Group>
 
                  <Form.Row>
                    <Form.Group controlId="formGridCity" className={"pr-2"}>
@@ -63,10 +67,6 @@ class Forma extends Component {
                      </Form.Control>
                    </Form.Group>
 
-                   <Form.Group controlId="formGridZip" className={"pr-2"}>
-                     <Form.Label>Zip</Form.Label>
-                     <Form.Control />
-                   </Form.Group>
                  </Form.Row>
 
                  <Button variant="primary" type="submit">

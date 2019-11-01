@@ -35,6 +35,9 @@ const LogIn = ({ history }) => {
                 <SectionComponent>
                     <LogInData handleLogin={handleLogin}/>
                 </SectionComponent>
+                <SectionComponent/>
+                <SectionComponent/>
+
                 <Footer/>
             </div>
         );

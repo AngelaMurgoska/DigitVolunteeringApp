@@ -9,7 +9,7 @@ import {
 class RegisterData extends Component{
     render(){
         return (
-            <div>
+            <div className="mt-3">
                 <Row>
                     <Col xs="3"/>
                     <Col>

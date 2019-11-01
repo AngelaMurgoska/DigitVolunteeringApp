@@ -17,38 +17,38 @@ class VolnterStory extends Component {
                 <h1 className={"text-center stories-title"}>Искуства на волонтери</h1>
                 <hr className={"content-hr"}/>
                 <div className={"row p-5"}>
-                    <div className={"col-4"}>
+                    <div className={"col-4 h-100"}>
                         <div className={"card-element"}>
                             <div className="card story-container-border mb-3">
                                 <Card.Img variant="top" src={volunteerStoryImg2}/>
                                 <h2 className={"text-center"}>Мирјана (57)</h2>
                                 <small className={"text-center"}>Учесник во еколошка акција</small>
                                 <div className="card-body text-danger">
-                                    <p className="card-tex text-story-color">Уживав во акцијата. Со добра мисла и решеност може многу да се постигне. Голем поддржувач сум на акции кои придонесуваат за подобра животна средина и активно учествувам.</p>
+                                    <p className="card-tex text-story-color ">Уживав во акцијата. Со добра мисла и решеност може многу да се постигне. Голем поддржувач сум на акции кои придонесуваат за подобра животна средина и активно учествувам во нив и стекнав нови пријатели.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                     <div className={"col-4"}>
-                        <div className={"card-element"}>
+                     <div className={"col-4 h-100"}>
+                        <div className={"card-element "}>
                             <div class="card story-container-border mb-3">
                                  <Card.Img variant="top"  src={volunteerStoryImg1} />
                                  <h2 className={"text-center"}>Марија (21)</h2>
                                 <small className={"text-center"}>Волонтер на филмски фестивал Giffoni</small>
                                  <div class="card-body text-danger">
-                               <p class="card-text text-story-color">Научив многу во текот на оваа работа. Дефинитивно одлично искуство, би го повторила повторно. Другите волотери беа супер, одлично се дружевме, а и филмската програма нудеше многу добри филмови. </p>
+                               <p class="card-text text-story-color p-2">Научив многу во текот на оваа работа. Дефинитивно одлично искуство, ако имам можност би го повторила повторно. Другите волотери беа супер, одлично се дружевме, а и филмската програма нудеше многу добри филмови.   </p>
                             </div>
                         </div>
                      </div>
                    </div>
-                 <div className={"col-4"}>
+                 <div className={"col-4 h-100"}>
                     <div className={"card-element"}>
                      <div class="card story-container-border mb-3">
                       <Card.Img variant="top"  src={volunteerStoryImg3} />
                          <h2 className={"text-center"}>Бојана (30)</h2>
                          <small className={"text-center"}>Црвен крст волонтер</small>
                         <div class="card-body text-danger">
-                           <p class="card-tex text-story-color">Според мене е од огромна важност присуството на лица кои можат да пружат медицинска помош на настани од јавен карактер. Имам искуство во областа и со задоволство учествувам секогаш кога имам време.</p>
+                           <p class="card-tex text-story-color ">Според мене е од огромна важност присуството на лица кои можат да пружат медицинска помош на настани од јавен карактер. Имам искуство во областа и со задоволство учествувам секогаш кога имам време.   </p>
                        </div>
                     </div>
                     </div>

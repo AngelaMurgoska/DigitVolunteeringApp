@@ -5,7 +5,7 @@
 
 .ul-links{
     list-style-type: none;
-    color: #8bd8bd;
+    color: #8bd8bd !important;
     font-size: 1em;
 }
 
@@ -26,3 +26,4 @@
 .btn-footer-link{
     text-align: center;
 }
+

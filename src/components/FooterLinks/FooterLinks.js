@@ -9,11 +9,11 @@ class FooterLinks extends Component {
              <div className={"links-display"}>
                  <ul className={"ul-links"}>
                      <li className={"h5"}>Градови</li>
-                     <li className={"li-item"}>Скопје</li>
-                     <li className={"li-item"}>Тетово</li>
-                     <li className={"li-item"}>Битола</li>
-                     <li className={"li-item"}>Куманово</li>
-                     <li className={"li-item"}>Прилеп</li>
+                     <li className={"li-item"}><a href="/events/Скопје">Скопје</a></li>
+                     <li className={"li-item"}><a href="/events/Тетово">Тетово</a></li>
+                     <li className={"li-item"}><a href="/events/Битола">Битола</a></li>
+                     <li className={"li-item"}><a href="/events/Куманово">Куманово</a></li>
+                     <li className={"li-item"}><a href="/events/Прилеп">Прилеп</a></li>
                  </ul>
              </div>
              <div className={"links-display"}>

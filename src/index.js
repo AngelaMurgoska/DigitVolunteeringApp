@@ -10,6 +10,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import LogIn from "./components/LogIn"
 import Register from "./components/Register/Register"
 import {AuthProvider} from "./Auth";
+import EventDetails from "./components/EventDetails/EventDetails"
 
 const routing=(
     <AuthProvider>
@@ -19,6 +20,7 @@ const routing=(
                 <Route exact path="/login" component={LogIn}/>
                 <Route exact path="/register" component={Register}/>
                 <Route exact path="/details/:id" component={DetailsPage}/>
+                <Route exact path="/events/:location" component={EventDetails}/>
                 <Route exact path="/" component={App}/>
             </div>
         </Router>
